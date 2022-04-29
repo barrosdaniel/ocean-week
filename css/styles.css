@@ -1,6 +1,7 @@
 /* ===============================================
 RESETS
 =============================================== */
+/* Type */
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Oswald:wght@400;700&display=swap');
 
 html {
@@ -17,4 +18,23 @@ h2,
 h3,
 h4 {
   font-family: 'Oswald', sans-serif;
+}
+
+/* Colours */
+:root {
+  --primary: #00769F;
+  --secondary: #9E1035;
+  --third: #9E9510;
+  --black: #0D0D0D;
+  --gray-dark: #171819;
+  --gray: #5f646a;
+  --gray-light: #d0d3d5;
+  --white: #F2F2F2;
+}
+
+/* ===============================================
+STYLES
+=============================================== */
+h1 {
+  color: var(--primary);
 }
