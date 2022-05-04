@@ -81,15 +81,15 @@ STYLES
 
 .schedule__button {
   font-family: 'Oswald', sans-serif;
-  /* font-size: 3rem; */
-}
-
-.schedule__button::after {
-  color: white;
 }
 
 .schedule__time {
   align-self: flex-end;
+}
+
+.schedule__button.collapsed::after,
+.schedule__button:not(.collapsed)::after {
+  background-image: url(/img/chevron-down-solid.svg);
 }
 
 /* Form */
