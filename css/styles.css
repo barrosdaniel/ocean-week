@@ -19,6 +19,7 @@ h2,
 h3,
 h4 {
   font-family: 'Oswald', sans-serif;
+  color: var(--secondary);
 }
 
 a:link,
@@ -39,6 +40,8 @@ a:hover {
   --gray: #5f646a;
   --gray-light: #d0d3d5;
   --white: #F2F2F2;
+
+  --background-transparent: rgba(242, 242, 242, 0.8);
 }
 
 /* ===============================================
@@ -47,13 +50,13 @@ STYLES
 .background {
   min-height: 100vh;
   padding: 0;
-  background: url(/img/jellyfish-931886_1920.jpg) center;
+  background: url(/img/bubbles-230014_1920.jpg) center;
   background-size: cover;
 }
 
 /* Top Bar */
 .header {
-  background-color: rgba(242, 242, 242, 0.8);
+  background-color: var(--background-transparent);
   min-height: 8rem;
 }
 
@@ -61,7 +64,39 @@ STYLES
 
 
 
+/* Main Attractions */
 
+
+
+/* Schedule */
+.schedule {
+  background-color: var(--background-transparent);
+}
+
+.schedule__button,
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.schedule__button {
+  font-family: 'Oswald', sans-serif;
+  /* font-size: 3rem; */
+}
+
+.schedule__button::after {
+  color: white;
+}
+
+.schedule__time {
+  align-self: flex-end;
+}
+
+/* Form */
+
+
+
+/* Footer */
 
 
 h1 {
