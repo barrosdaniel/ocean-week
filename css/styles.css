@@ -42,6 +42,7 @@ a:hover {
   --white: #F2F2F2;
 
   --background-transparent: rgba(242, 242, 242, 0.8);
+  --gray-transparent: rgba(95, 100, 106, 0.9);
 }
 
 /* ===============================================
@@ -104,8 +105,16 @@ STYLES
 
 
 /* Footer */
-
-
-h1 {
-  color: var(--primary);
+.footer {
+  background-color: var(--gray-transparent);
+  color: var(--white);
+  font-size: 1.4rem;
 }
+
+.footer__icon {
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+
+h1 {}
