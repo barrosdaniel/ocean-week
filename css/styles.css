@@ -50,7 +50,7 @@ STYLES
 .background {
   min-height: 100vh;
   padding: 0;
-  background: url(/img/bubbles-230014_1920.jpg) center;
+  background: url(../img/bubbles-230014_1920.jpg) center;
   background-size: cover;
 }
 
@@ -83,13 +83,20 @@ STYLES
   font-family: 'Oswald', sans-serif;
 }
 
+.accordion-header {
+  outline: none;
+}
+
 .schedule__time {
   align-self: flex-end;
 }
 
-.schedule__button.collapsed::after,
-.schedule__button:not(.collapsed)::after {
-  background-image: url(/img/chevron-down-solid.svg);
+.schedule__button::after {
+  display: none;
+}
+
+.accordion-body {
+  background-color: var(--background-transparent);
 }
 
 /* Form */
