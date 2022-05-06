@@ -19,7 +19,6 @@ h2,
 h3,
 h4 {
   font-family: 'Oswald', sans-serif;
-  color: var(--secondary);
 }
 
 a:link,
@@ -62,16 +61,41 @@ STYLES
 }
 
 /* Hero */
+.hero>div {
+  padding: 0;
+}
 
+.hero__image {
+  opacity: 0.95;
+}
 
+.hero__image-wrapper {
+  position: relative;
+}
 
-/* Main Attractions */
+.hero__title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 50%;
+  color: var(--white);
+}
 
-
+.hero__details {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 50%;
+  color: var(--white);
+}
 
 /* Schedule */
 .schedule {
   background-color: var(--background-transparent);
+}
+
+.schedule__title {
+  color: var(--secondary);
 }
 
 .schedule__button,
@@ -115,6 +139,3 @@ STYLES
   cursor: pointer;
   font-size: 2rem;
 }
-
-
-h1 {}
