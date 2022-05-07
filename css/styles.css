@@ -29,6 +29,12 @@ a:hover {
   text-decoration: none;
 }
 
+input,
+select {
+  font-size: 2rem !important;
+  color: var(--gray) !important;
+}
+
 /* Colours */
 :root {
   --primary: #00769F;
@@ -42,6 +48,7 @@ a:hover {
 
   --background-transparent: rgba(242, 242, 242, 0.8);
   --gray-transparent: rgba(95, 100, 106, 0.9);
+  --box-shadow: rgba(0, 0, 0, 0.5);
 }
 
 /* ===============================================
@@ -91,11 +98,11 @@ STYLES
 
 /* Schedule */
 .schedule {
-  background-color: var(--background-transparent);
+  background-color: var(--gray-transparent);
 }
 
 .schedule__title {
-  color: var(--gray);
+  color: var(--white);
 }
 
 .schedule__button,
@@ -124,18 +131,53 @@ STYLES
   background-color: var(--background-transparent);
 }
 
-/* Form */
+/* Register */
+.register {
+  background-color: var(--background-transparent);
+}
 
+.register__title {
+  color: var(--gray);
+}
+
+.register__form {
+  margin: 1rem 0;
+}
+
+.form-label {
+  font-size: 1.2rem;
+  color: var(--gray);
+}
+
+.register__button {
+  width: 100%;
+  background-color: var(--primary);
+  border: solid 1px var(--primary) !important;
+  font-size: 2.5rem;
+  transition: 0.2s;
+}
+
+.register__button:hover {
+  background-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 8px 10px 10px 1px var(--box-shadow);
+}
 
 
 /* Footer */
 .footer {
-  background-color: var(--gray-transparent);
+  background-color: var(--gray-dark);
   color: var(--white);
   font-size: 1.4rem;
 }
 
 .footer__icon {
+  display: inline-block;
   cursor: pointer;
   font-size: 2rem;
+  transition: 0.2s;
+}
+
+.bi:hover {
+  transform: translateY(-2px);
 }
