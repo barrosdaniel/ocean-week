@@ -95,7 +95,7 @@ STYLES
 }
 
 .schedule__title {
-  color: var(--secondary);
+  color: var(--gray);
 }
 
 .schedule__button,
