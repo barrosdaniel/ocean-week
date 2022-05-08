@@ -38,12 +38,11 @@ select {
 /* Colours */
 :root {
   --primary: #00769F;
-  --secondary: #9E1035;
-  --third: #9E9510;
-  --black: #0D0D0D;
+  --primary-accent: #00124d;
   --gray-dark: #171819;
   --gray: #5f646a;
   --gray-light: #d0d3d5;
+  --black: #0D0D0D;
   --white: #F2F2F2;
 
   --background-transparent: rgba(242, 242, 242, 0.8);
@@ -109,11 +108,13 @@ STYLES
 
 /* Schedule */
 .schedule {
-  background-color: var(--gray-transparent);
+  border-top: solid 1px var(--gray);
+  padding-top: 8rem !important;
+  background-color: var(--background-transparent);
 }
 
 .schedule__title {
-  color: var(--white);
+  color: var(--gray);
 }
 
 .schedule__button,
@@ -145,6 +146,7 @@ STYLES
 /* Register */
 .register {
   background-color: var(--background-transparent);
+  padding-bottom: 8rem !important;
 }
 
 .register__title {
