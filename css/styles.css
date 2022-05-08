@@ -88,6 +88,17 @@ STYLES
   color: var(--white);
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__title-text {
+    font-size: 8rem;
+  }
+
+  .hero__date-text {
+    font-size: 4rem;
+  }
+
+}
+
 .hero__details {
   position: absolute;
   bottom: 0;
